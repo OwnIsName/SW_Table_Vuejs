@@ -1,4 +1,4 @@
-<template>
+<template><!-- eslint-disable --> 
   <div class="container">
     <h1 class="main-title">{{ msg }}</h1>
     <Block :block="item.titles" :isTitle="isTitle" :handleSort="handleSort" />
@@ -10,7 +10,7 @@
     />
   </div>
 </template>
-<script>
+<script>/* eslint-disable */ 
 import Block from "./Block";
 
 export default {
@@ -60,7 +60,7 @@ export default {
 
       if (this.isSorted == "min") {
         this.isSorted = "max";
-        const result = this.visibleItems.sort(function(a, b) {
+        const result = this.visibleItems.sort((a, b) => {
           if (a[sortType] > b[sortType]) {
             return -1;
           }

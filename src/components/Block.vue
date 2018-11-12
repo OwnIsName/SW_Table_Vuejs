@@ -1,3 +1,4 @@
+
 <template>
   <div class="container" v-if="isTitle" @click="handleSort">
     <h2 v-for="(item, i) in block" :data-type="i">{{ item }}</h2>
@@ -7,7 +8,7 @@
   </div>
 </template>
 
-<script>
+<script>/* eslint-disable */ 
 export default {
   name: "Block",
 

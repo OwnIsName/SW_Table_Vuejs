@@ -1,3 +1,4 @@
+
 <template>
   <div id="app">
     <List :item="obj" @onEdit="onEdit" />
@@ -10,7 +11,7 @@
   </div>
 </template>
 
-<script>
+<script>/* eslint-disable */ 
 import db from "./db/db";
 import List from "./components/List";
 import Popup from "./components/Popup";
